@@ -96,6 +96,11 @@ export class FacebookService {
       .catch(this.handleError) as Promise<FeedResponse>;
   }
 
+  getAPI<T>(url: string) {
+    return this.fb.api(url)
+      .catch(this.handleError) as Promise<T>;
+  }
+
 
   private handleError(error) {
     console.error('Error processing action', error);
