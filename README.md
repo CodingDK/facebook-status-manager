@@ -1,28 +1,25 @@
-# FacebookManager
+# facebook-status-manager
+This is a project to try of the Facebook Graph API. It is meant that you should be able to see all of your previous facebook statuses and delete them if you wish. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
+The Application use TypeScript, Angular4.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Instructions
+1. First run install npm packages
 
-## Code scaffolding
+    `npm install`
+2. Install @angular/cli global
+    
+    `npm install -g @angular/cli`
+2. Create a new file named `.secrets.ts` in the project root folder
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    Content have to be like this (remember to replace the Facebook App ID):
+    
+    ```javascript
+    export const secrets = {
+      facebook_appId: 'Your Facebook APP ID'
+    };
+    ```
+3. Now just run the npm start command
+    
+    `npm start`
