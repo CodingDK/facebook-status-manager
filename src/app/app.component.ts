@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import * as moment from 'moment';
+import { environment } from 'environments/environment';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +10,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor() {
+    moment.locale(environment.locale);
+  }
 }
